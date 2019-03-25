@@ -1,4 +1,4 @@
-# Python tools for Riverscape Analyses
+# pydroscape: Python tools for Riverscape Analyses
 This repository includes Python script for many sorts of river-related analyses, including tools for plotting data and processing experimental data.
 
 Installed as local package, the functionalities can be accessed in Python with `pydroscape.FUNCTION`, where the following functions are available:
