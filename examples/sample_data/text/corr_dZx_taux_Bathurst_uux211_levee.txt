@@ -1,0 +1,7 @@
+Correlation of:D:\Python\TerrainChange/output/taux/taux_Bathurst_uux211.tif
+With observed tcd (scour-fill):
+Morph. Unit: levee
+nan
+
+MU-tcd statistics [Min, Max, Mean, Stdev]: 
+[-999.90002441406, 0.0, -28.295746616413, 165.80687441882]

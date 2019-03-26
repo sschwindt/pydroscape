@@ -1,0 +1,7 @@
+Correlation of:D:\Python\TerrainChange/output/taux/taux_Bathurst_uux100.tif
+With observed tcd (scour-fill):
+Morph. Unit: slackwater
+0.008188071555207024
+
+MU-tcd statistics [Min, Max, Mean, Stdev]: 
+[-999.90002441406, 16.594635009766, -27.44549760771, 163.16470935323]

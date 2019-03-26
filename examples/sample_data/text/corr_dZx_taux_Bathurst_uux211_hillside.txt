@@ -1,0 +1,7 @@
+Correlation of:D:\Python\TerrainChange/output/taux/taux_Bathurst_uux211.tif
+With observed tcd (scour-fill):
+Morph. Unit: hillside
+0.012174130699497835
+
+MU-tcd statistics [Min, Max, Mean, Stdev]: 
+[-999.90002441406, 49.395763397217, -27.910650433324, 164.69481243933]

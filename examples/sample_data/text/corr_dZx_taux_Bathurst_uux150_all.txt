@@ -1,0 +1,6 @@
+Correlation of:D:\Python\TerrainChange/output/taux/taux_Bathurst_uux150.tif
+With observed tcd (scour-fill):
+0.01065112492623351
+
+File statistics [Min, Max, Mean, Stdev]: 
+[0.0, 24490810.0, 0.33285715420399703, 1940.5194773223475]

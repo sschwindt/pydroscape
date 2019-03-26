@@ -1,0 +1,7 @@
+Correlation of:D:\Python\TerrainChange/output/taux/taux_Bathurst_uux030.tif
+With observed tcd (scour-fill):
+Morph. Unit: floodplain
+-0.1800835301667805
+
+MU-tcd statistics [Min, Max, Mean, Stdev]: 
+[-999.90002441406, 45.442890167236, -20.985536444636, 143.09664528182]

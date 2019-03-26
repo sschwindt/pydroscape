@@ -1,0 +1,7 @@
+Correlation of:D:\Python\TerrainChange/output/taux/taux_Bathurst_uux020.tif
+With observed tcd (scour-fill):
+Morph. Unit: spurdike
+-0.12711208315431896
+
+MU-tcd statistics [Min, Max, Mean, Stdev]: 
+[-999.90002441406, 4.635591506958, -28.313232167826, 165.85117472303]

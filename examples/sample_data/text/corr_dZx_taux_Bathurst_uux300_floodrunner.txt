@@ -1,0 +1,7 @@
+Correlation of:D:\Python\TerrainChange/output/taux/taux_Bathurst_uux300.tif
+With observed tcd (scour-fill):
+Morph. Unit: floodrunner
+0.02826018963429803
+
+MU-tcd statistics [Min, Max, Mean, Stdev]: 
+[-999.90002441406, 8.3985033035278, -28.050262077874, 165.09619285109]

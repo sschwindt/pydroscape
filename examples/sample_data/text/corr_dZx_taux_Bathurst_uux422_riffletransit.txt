@@ -1,0 +1,7 @@
+Correlation of:D:\Python\TerrainChange/output/taux/taux_Bathurst_uux422.tif
+With observed tcd (scour-fill):
+Morph. Unit: riffletransit
+0.16663518730746724
+
+MU-tcd statistics [Min, Max, Mean, Stdev]: 
+[-999.90002441406, 13.926898956299, -27.496395300686, 163.37390205424]

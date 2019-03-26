@@ -1,0 +1,7 @@
+Correlation of:D:\Python\TerrainChange/output/taux/taux_Bathurst_uux030.tif
+With observed tcd (scour-fill):
+Morph. Unit: bank
+-0.02125494438104247
+
+MU-tcd statistics [Min, Max, Mean, Stdev]: 
+[-999.90002441406, 17.210712432861, -27.853606544048, 164.51003860697]

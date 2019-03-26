@@ -1,0 +1,7 @@
+Correlation of:D:\Python\TerrainChange/output/taux/taux_Bathurst_uux075.tif
+With observed tcd (scour-fill):
+Morph. Unit: fastglide
+0.026933969772088347
+
+MU-tcd statistics [Min, Max, Mean, Stdev]: 
+[-999.90002441406, 11.483388900757, -27.560008662788, 163.61374248507]

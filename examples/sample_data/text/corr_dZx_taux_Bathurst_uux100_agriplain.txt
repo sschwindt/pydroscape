@@ -1,0 +1,7 @@
+Correlation of:D:\Python\TerrainChange/output/taux/taux_Bathurst_uux100.tif
+With observed tcd (scour-fill):
+Morph. Unit: agriplain
+nan
+
+MU-tcd statistics [Min, Max, Mean, Stdev]: 
+[-999.90002441406, 0.0, -28.127504371445, 165.32704630543]

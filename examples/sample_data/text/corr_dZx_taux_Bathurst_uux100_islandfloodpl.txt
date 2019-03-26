@@ -1,0 +1,7 @@
+Correlation of:D:\Python\TerrainChange/output/taux/taux_Bathurst_uux100.tif
+With observed tcd (scour-fill):
+Morph. Unit: islandfloodpl
+0.07634477646255049
+
+MU-tcd statistics [Min, Max, Mean, Stdev]: 
+[-999.90002441406, 11.813284873962, -27.863156376684, 164.55663448214]
