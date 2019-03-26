@@ -177,8 +177,8 @@ class Plotter:
         return im, cbar
 
     def make_heatmap(self, Z, x_labels, y_labels, *args, **kwargs):
-        # x_data = LIST of STR
-        # y_data = LIST of STR
+        # x_labels = LIST of STR
+        # y_labels = LIST of STR
         # Z = NESTED LIST with size = (y_size, x_size) -- [y_size*[x_size elements]]
         # Documentation: https://matplotlib.org/gallery/images_contours_and_fields/image_annotated_heatmap.html
         
@@ -302,7 +302,6 @@ class Plotter:
             self.save_figure(fig, 'xyz')
         else:
             self.save_figure(fig, 'xy')
-        
 
 
     def make_x_y_plot(self, x_data, y_data, *args, **kwargs):
@@ -322,7 +321,6 @@ class Plotter:
             pass
         if not ('plot_type' in locals()):
             plot_type = 'plot'
-        
         
         fig = self.create_figure()
         

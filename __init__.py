@@ -8,8 +8,8 @@ except:
     pass
 
 try:
-    import c_plot as e_plot
-    import c_xlsx as e_xlsx    
+    import e_plot
+    import e_xlsx
     
 except:
     print("ERROR: Cannot access own scripts. Check installation and write rights.")

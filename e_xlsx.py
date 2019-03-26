@@ -175,7 +175,7 @@ class read_book:
                 logging.info("   * Matrix ends at row no. " + str(__row__))
             if valid_content:
                 try:
-                    matrix.append(self.read_row_str(__row__, start_col))
+                    matrix.append(self.read_row(__row__, start_col))
                 except:
                     logging.info("   * WARNING: Undefined row data " + str(__row__))
                 cc = 0
@@ -190,7 +190,7 @@ class read_book:
             __row__ += 1
         return matrix
 
-    def read_row_str(self, row, start_col, **kwargs):
+    def read_row(self, row, start_col, **kwargs):
         # reads ROW beginning at COL until it meets an empty cell
         # row = INT (First Row = 1, not 0 as in a list!)
         # start_col = CHR, e.g., start_col = "B"
@@ -258,14 +258,14 @@ class read_book:
         print("Class Info: <type> = XLSX manipulation in cIO.py")
 
 
-class full_book(Read):
+class full_handle(read_book):
     def __init__(self, *args):
         # args[0] = STR full_path to workbook template
         # args[1] = INT worksheet number
         try:
-            Read.__init__(self, args[0], False, False, args[1])
+            read_book.__init__(self, args[0], False, False, args[1])
         except:
-            Read.__init__(self)
+            read_book.__init__(self)
             try:
                 self.open_wb(args[0])
                 try:
