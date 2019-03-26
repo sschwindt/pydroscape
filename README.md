@@ -9,11 +9,11 @@ Installed as local package, the functionalities can be accessed in Python with `
 
 
 # Requirements
- * Python 3.x (that should be clear)
+ * Python 3.x 
  * Basic packages: `numpy`, `matplotlib`, `openpyxl`
  * Supplemental packages (required by some functions only): `pandas`, `qgis.core`, `gdal`, `osgeo`
  
-Pydroscapes exclusively uses open source packages and software that is free of charge (among others: QGIS).
+`pydroscape` exclusively uses open source packages and software that is free of charge (among others: QGIS).
 
 # Usage
 
