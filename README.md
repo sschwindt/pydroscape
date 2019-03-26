@@ -1,7 +1,7 @@
 # Introduction
 This repository provides Python3 scripts for many sorts of river-related analyses, including tools for plotting data and processing data.
 
-Installed as local package, the functionalities can be accessed in Python with `pydroscape.FUNCTION`, where the following functions are available:
+Installed as local package, the functionalities can be accessed in Python with `pydroscape.e_...`, where the following functions are available:
 
 * `e_xlsx`: Process experimental data recorded with any kind of data logger.
 * `e_plot`: x-y, 2D (heatmap), and 3D plots with numpy and matplotlib.
