@@ -3,15 +3,16 @@ This repository provides Python3 scripts for many sorts of river-related analyse
 
 Installed as local package, the functionalities can be accessed in Python with `pydroscape.e_...`, where the following functions are available:
 
-* `e_xlsx`: Process experimental data recorded with any kind of data logger.
+* `e_geostat`: Calculate raster statistics and correlation between two rasters.
 * `e_plot`: x-y, 2D (heatmap), and 3D plots with numpy and matplotlib.
-* `e_data`: Process experimental data recorded with any kind of data logger.
+* `e_xlsx`: Process experimental data recorded with any kind of data logger.
+* `e_data`: _FUTURE IMPLEMENTATION_ Process experimental data recorded with any kind of data logger.
 
 
 # Requirements
  * Python 3.x 
  * Basic packages: `numpy`, `matplotlib`, `openpyxl`
- * Supplemental packages (required by some functions only): `pandas`, `qgis.core`, `gdal`, `osgeo`
+ * Supplemental packages (required by some functions only): `pandas`, `qgis.core`, `osgeo` (`gdal`)
  
 `pydroscape` exclusively uses open source packages and software that is free of charge (among others: QGIS).
 
