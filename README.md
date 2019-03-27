@@ -5,7 +5,7 @@ Installed as local package, the functionalities can be accessed in Python with `
 
 * `e_geostat`: Calculate raster statistics and correlation between two rasters.
 * `e_plot`: x-y, 2D (heatmap), and 3D plots with numpy and matplotlib.
-* `e_xlsx`: Process experimental data recorded with any kind of data logger.
+* `e_xlsx`: Process workbooks.
 * `e_data`: _FUTURE IMPLEMENTATION_ Process experimental data recorded with any kind of data logger.
 
 
