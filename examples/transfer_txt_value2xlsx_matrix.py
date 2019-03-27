@@ -1,6 +1,7 @@
 import os, sys
 print(sys.version)
 print(sys.executable)
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..\\..')))
 try:
     os.remove(os.path.abspath(os.path.dirname(__file__)) + "/logfile.log")
 except:
