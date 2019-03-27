@@ -1,5 +1,5 @@
 # Introduction
-This repository provides Python3 scripts for many sorts of river-related analyses, including tools for plotting data and processing data.
+`pydroscape` constitutes Python3 functions for many sorts of river-related analyses, including tools for geodata statistics, plotting and processing of other data.
 
 Installed as local package, the functionalities can be accessed in Python with `pydroscape.e_...`, where the following functions are available:
 
@@ -14,7 +14,7 @@ Installed as local package, the functionalities can be accessed in Python with `
  * Basic packages: `numpy`, `matplotlib`, `openpyxl`
  * Supplemental packages (required by some functions only): `pandas`, `qgis.core`, `osgeo` (`gdal`)
  
-`pydroscape` exclusively uses open source packages and software that is free of charge (among others: QGIS).
+`pydroscape` exclusively uses freely available packages and software (among others: QGIS).
 
 # Usage
 
