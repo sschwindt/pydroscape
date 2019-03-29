@@ -33,8 +33,10 @@ except:
 try:
     import pandas as pd
 except:
-
-    import data_processing.d_launch as e_data
+    try:
+        import e_data
+    except:
+        print("WARNING: Cannot load e_data.")
     print("Note: Cannot find pandas. The data processing function (e_data) will write data without labels.")
 
 

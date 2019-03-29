@@ -52,10 +52,9 @@ def chkIsEmpty(variable):
         return False
 
 
-def chkFolderStructure(folder_name):
-    script_dir = os.path.dirname(os.path.abspath(__file__))  # get base working directory of script
-    if not (os.path.exists(script_dir + '\\' + folder_name)):
-        os.mkdir(script_dir + '\\' + folder_name)
+def chkFolderStructure(folder_tree):
+    if not (os.path.exists(folder_tree)):
+        os.mkdir(folder_tree)
 
 
 def chkInteger(args):
@@ -274,11 +273,14 @@ def write2cache(set_name, set_info, *args):
         f_ending = args[1]
     except:
         f_ending = 'inp'
-    f = open(set_name + '.' + f_ending, 'w')
-    for i in set_info:
-        f.write(str(i) + '\n')
-    f.close()
-    os.chdir(script_dir)
+    try:
+        f = open(set_name + '.' + f_ending, 'w')
+        for i in set_info:
+            f.write(str(i) + '\n')
+        f.close()
+        os.chdir(script_dir)
+    except:
+        print('WARNING: Failed to write information to cache.')
 
 
 def writeData(folder_dir, file_name, data):

@@ -1,6 +1,8 @@
 #!/usr/bin/python
+import sys, os
 import numpy as np
-from d_utilities import *
+sys.path.append(os.path.dirname(__file__))
+from utilities import *
 
 class Hydraulics(object):
     def __init__(self, fluidT, nCol):
