@@ -3,9 +3,9 @@ import numpy as np
 import sys, os
 sys.path.append(os.path.dirname(__file__))
 
-from d_utilities import *
-from d_manipulate import Manipulate
-from d_hydraulics import Hydraulics
+from utilities import *
+from manipulate import Manipulate
+from hydraulics import Hydraulics
 
 
 class Compute(Manipulate, Hydraulics):

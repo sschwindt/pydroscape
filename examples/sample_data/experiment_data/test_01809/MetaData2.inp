@@ -5,7 +5,7 @@ Data path = D:\Python\pydroscape\examples\sample_data\experiment_data\test_01809
 #
 #DESCRIPTION OF DATAFILES - PrefixNumberSuffix.Type 
 #---------------------------------------------------------------------------------------
-Start measurement number = 0 #[INTEGER]
+Start measurement number = 1 #[INTEGER]
 Final measurement number = 20 #[INTEGER]
 Digits of measurement number = 5 #[INTEGER]
 Data filename (prefix) = Balance_ #[STRING]

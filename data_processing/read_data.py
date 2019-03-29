@@ -1,7 +1,8 @@
 #!/usr/bin/python
-import os
+import os, sys
 import numpy as np
-from d_utilities import *
+sys.path.append(os.path.dirname(__file__))
+from utilities import *
 
 
 class GetData(object):
