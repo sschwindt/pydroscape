@@ -1,0 +1,35 @@
+# 
+#INPUT PATH 
+#---------------------------------------------------------------------------------------
+Data path = D:\Python\pydroscape\examples\sample_data\experiment_data\test_01809\pump_discharge #[STRING]
+#
+#DESCRIPTION OF DATAFILES - PrefixNumberSuffix.Type 
+#---------------------------------------------------------------------------------------
+Start measurement number = 0 #[INTEGER]
+Final measurement number = 0 #[INTEGER]
+Digits of measurement number = 0 #[INTEGER]
+Data filename (prefix) = Pompe 6_11_04_2016 #[STRING]
+Data filename (suffix) =  #[STRING]
+Data file type = TXT #[STRING]
+Data delimiter = tab #[STRING]
+Header length = 1 #[INTEGER]
+Data name =  CodeCalibration #[STRING]
+Data columns = 6 #[STRING]
+# 
+#SPECIFICATION OF DATA PROCESSING 
+#---------------------------------------------------------------------------------------
+Method = ['convertPumpDischarges'] #[STRING]
+Time stamp = 0 #[INTEGER] in seconds
+Time extension = 3.0 #[FLOAT] time interval between measurements e.g. 4 --> one measurement every 4 sec
+# 
+#FLUID PARAMETERS 
+#---------------------------------------------------------------------------------------
+Fluid type =  WATER #[STRING]
+Fluid temperature = 18 #[INTEGER]
+# 
+#OUTPUT 
+#---------------------------------------------------------------------------------------
+Output path for figures = nan #[STRING] (e.g. subfolder\subfolderForFigures)
+Output path for data files = D:\Python\pydroscape\examples\sample_data\experiment_data\e_data_results\Discharge #[STRING] (e.g. subfolder\subfolderForData)
+Output name for figures = nan #[STRING]
+Output name for data files = Discharge_ #[STRING]
