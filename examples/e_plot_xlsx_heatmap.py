@@ -8,8 +8,8 @@ except:
     pass
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..\\..')))
 try:
-    import pydroscape.e_xlsx as cio
-    import pydroscape.e_plot as cpy
+    import pydroscape.e_xlsx as psx
+    import pydroscape.e_plot as psp
 except:
     print('ERROR: Cannot import own packages.')
 
@@ -40,7 +40,6 @@ def get_xlsx_file_names(loc_dir):
 def main(file_dir):
     # file_dir = STR of directory where XLSX workbooks with 2D plot data are stored
 
-    # f_names: 'corr_dZx_taux_[law]_uux_[QQQ]_[mu].txt
     own_dir = os.path.abspath(os.path.dirname(__file__)) + '/'
     files = get_xlsx_file_names(file_dir)
     if files.__len__() < 1:
@@ -49,14 +48,14 @@ def main(file_dir):
     for f in files:
         try:
             logging.info('PROCESSING: ' + str(f))
-            data_wb = cio.Workbook(f, 0)
+            data_wb = psx.Workbook(f, 0)
             logging.info(' - Reading data ...')
             _q_ = data_wb.read_row(1, 'B') # corresponds to x-data
             labels_mu = data_wb.read_column('A', 2) # corresponds to y-data
 
             corr_data = data_wb.read_matrix('B', 2) # corresponds to Z-data
             logging.info(' - Creating plot ...')
-            surf_plot = cpy.Plotter()
+            surf_plot = psp.Plotter()
             surf_plot.width = 6.0
             surf_plot.height = 10.0
             surf_plot.font_size = 11.0
@@ -68,7 +67,7 @@ def main(file_dir):
             
             labels_q = []
             for labs in _q_:
-                labels_q.append(str(labs) + ' m�/s')
+                labels_q.append(str(labs) + ' m3/s')
 
             surf_plot.colorbar_min_val = -1
             surf_plot.colobar_label = 'Pearson r [--]'

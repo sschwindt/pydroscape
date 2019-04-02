@@ -13,7 +13,7 @@ except:
     print("ERROR: Cannot import numpy.")
 
 try:
-    import pydroscape.e_xlsx as cio
+    import pydroscape.e_xlsx as psx
 except:
     print("ERROR: Cannot import numpy.")
 
@@ -151,13 +151,13 @@ def setup_workbook(roughness_law, col_labels, row_labels):
     s_dir = os.path.abspath(os.path.dirname(__file__)) + '/'
     logging.info(' - Setting up output workbook: ' + s_dir + 'output/' + roughness_law + '.xlsx')
 
-    init_wb = cio.Workbook(s_dir + 'template_law.xlsx', 0)
+    init_wb = psx.Workbook(s_dir + 'template_law.xlsx', 0)
     init_wb.write_data2column('A', 2, row_labels)
     init_wb.write_data2row(1, 'B', col_labels)
     init_wb.save_close_wb(s_dir + 'output/' + roughness_law + '.xlsx')
     del init_wb
 
-    law_wb = cio.Workbook(s_dir + 'output/' + roughness_law + '.xlsx', 0)
+    law_wb = psx.Workbook(s_dir + 'output/' + roughness_law + '.xlsx', 0)
     law_wb.set_max_col(int(2 * col_labels.__len__()))
     law_wb.set_max_row(int(2 * row_labels.__len__()))
 
