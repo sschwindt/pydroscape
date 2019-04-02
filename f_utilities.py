@@ -38,9 +38,9 @@ def interpolate_linear(x1, x2, y1, y2, xi):
     return float(y1) + ((float(xi) - float(x1)) / (float(x2) - float(x1)) * (float(y2) - float(y1)))
 
 
-def is_number(s):
+def is_number(e):
     try:
-        float(s)
+        float(e)
         return True
     except ValueError:
         return False
@@ -109,7 +109,10 @@ def str2num(arg, sep):
     _a = int(_num[0])
     _b = int(_num[1])
     _num = _a + _b * 10 ** (-1 * len(str(_b)))
-    return _num
+    try:
+        return float(_num)
+    except:
+        return _num
 
 
 def str2tuple(arg):
@@ -134,9 +137,9 @@ def write_data(folder_dir, file_name, data):
             os.mkdir(folder_dir)
     os.chdir(folder_dir)
 
-    f = open(file_name+'.txt', 'w')
+    f = open(file_name, 'w')
     for i in data:
         line = str(i)+'\n'
         f.write(line)
-    print('Data written to: \n' + folder_dir + '\\' + str(file_name) + '.csv')
+    print('Data written to: \n' + folder_dir + '\\' + str(file_name))
 
