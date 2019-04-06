@@ -3,10 +3,11 @@
 
 Installed as local package, the functionalities can be accessed in Python with `pydroscape.e_...`, where the following functions are available:
 
-* `e_geostat`: Calculate raster statistics and correlation between two rasters.
-* `e_plot`: x-y, 2D (heatmap), and 3D plots with numpy and matplotlib.
-* `e_xlsx`: Process workbooks.
-* `e_data`: Process experimental data recorded with any kind of data logger.
+* `e_geostat`: Calculate raster statistics and correlation between two rasters. [More ...][5]
+* `e_plot`: x-y, 2D (heatmap), and 3D plots with numpy and matplotlib. [More ...][3]
+* `e_xlsx`: Process workbooks. [More ...][4]
+* `e_data`: Process experimental data recorded with any kind of data logger. [More ...][6]
+* `e_sed1d`: Calculate sediment transport based on 1D cross-section-averaged hydraulic simulations. [More ...][7]
 
 
 # Requirements
@@ -44,3 +45,9 @@ a_plot.make_heatmap(a_workbook_data_matrix, x_data_labels, y_data_labels)  # cre
 The [Wiki][1] contains details about installing and using `pydroscape`.
 
 [1]: https://github.com/sschwindt/pydroscape/wiki/home 
+[3]: https://github.com/sschwindt/pydroscape/wiki/Plot-functions
+[4]: https://github.com/sschwindt/pydroscape/wiki/Workbook-handling
+[5]: https://github.com/sschwindt/pydroscape/wiki/Geostatistics
+[6]: https://github.com/sschwindt/pydroscape/wiki/Data-processing-(non-geo)
+[7]: https://github.com/sschwindt/pydroscape/wiki/Utility-functions
+[8]: https://github.com/sschwindt/pydroscape/wiki/Sediment-transport-1D
