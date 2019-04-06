@@ -23,6 +23,7 @@ except:
 try:
     import e_plot
     import e_xlsx
+    import e_sed1d
 except:
     print("ERROR: Cannot access own scripts. Check installation and write rights.")
 
