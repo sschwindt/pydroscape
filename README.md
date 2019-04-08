@@ -1,7 +1,7 @@
 # Introduction
-`pydroscape` constitutes Python3 functions for many sorts of river-related analyses, including tools for geodata statistics, plotting and processing of other data.
+`pydroscape` provides Python3 tools for many sorts of riverscape-related analyses, including tools for geodata statistics, plotting and processing of other data.
 
-Installed as local package, the functionalities can be accessed in Python with `pydroscape.e_...`, where the following functions are available:
+Installed as local package, the following modules can be imported from `pydroscape.e_...`:
 
 * `e_geostat`: Calculate raster statistics and correlation between two rasters. [More ...][5]
 * `e_geocalc`: Performs raster calculations. [More ...][9]
@@ -63,8 +63,8 @@ sediment_container.calculate(method)
 
 ```
 
-# Documentation
-The [Wiki][1] contains details about installing and using `pydroscape`.
+# Documentation (Wiki)
+A comprehensive [Wiki][1] provides information on installing and using `pydroscape`.
 
 [1]: https://github.com/sschwindt/pydroscape/wiki/home 
 [3]: https://github.com/sschwindt/pydroscape/wiki/Plot-functions
