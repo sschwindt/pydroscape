@@ -17,18 +17,9 @@ try:
 except:
     print("ERROR: Cannot import numpy.")
 
-# print(os.path.abspath(os.path.abspath(os.path.dirname(sys.argv[0]))))
-try:
-    import logging
-    logging.basicConfig(filename='logfile.log', format='%(asctime)s %(message)s', level=logging.DEBUG)
-    logging.StreamHandler().setLevel(logging.DEBUG)
-    logging.StreamHandler().setFormatter("%(asctime)s - %(message)s")
-    logging.addLevelName(logging.INFO, '*INFO')
-    logging.addLevelName(logging.WARNING, '!WARNING')
-    logging.addLevelName(logging.ERROR, '!ERROR')
-except:
-    print("LOGGING ERROR: Could not load logging package. Check installation.")
-
+# set up logging
+import logging
+logging.basicConfig(filename='logfile.log', format='%(asctime)s %(message)s', level=logging.DEBUG)
 
 def cfs2cms(val_cfs):
     # val_cfs = FLOAT of discharges in cubic feet per second CFS that is converted here to cubic meter per second CMS
@@ -170,7 +161,7 @@ if __name__ == '__main__':
     discharges_cfs = [1000, 2000, 3000, 4000, 5000, 7500, 10000, 15000, 21100, 30000, 42200]
     discharges_cms = []
     [discharges_cms.append(cfs2cms(item)) for item in discharges_cfs]
-    corr_file_dir = os.path.abspath(os.path.dirname(__file__)) + "/sample_data/text/"  # directory of correlation text files
+    corr_file_dir = os.path.abspath(os.path.dirname(__file__)) + "/sample_data/text/geo_out2/"  # directory of correlation text files
     main(roughness_laws, corr_file_dir, discharges_cms)
 
 

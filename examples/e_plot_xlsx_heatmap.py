@@ -13,17 +13,9 @@ try:
 except:
     print('ERROR: Cannot import own packages.')
 
-# print(os.path.abspath(os.path.abspath(os.path.dirname(sys.argv[0]))))
-try:
-    import logging
-    logging.basicConfig(filename='logfile.log', format='%(asctime)s %(message)s', level=logging.DEBUG)
-    logging.StreamHandler().setLevel(logging.DEBUG)
-    logging.StreamHandler().setFormatter('%(asctime)s - %(message)s')
-    logging.addLevelName(logging.INFO, '*INFO')
-    logging.addLevelName(logging.WARNING, '!WARNING')
-    logging.addLevelName(logging.ERROR, '!ERROR')
-except:
-    print('LOGGING ERROR: Could not load logging package. Check installation.')
+# set up logging
+import logging
+logging.basicConfig(filename='logfile.log', format='%(asctime)s %(message)s', level=logging.DEBUG)
 
 def get_xlsx_file_names(loc_dir):
     # returns a LIST of files in loc_dir that contain search_str

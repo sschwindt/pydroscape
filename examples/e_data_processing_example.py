@@ -2,6 +2,8 @@ import os, sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..\\..')))
 import numpy as np
 import pydroscape.e_data as psd
+
+# set up logging
 import logging
 logging.basicConfig(filename='logfile.log', format='%(asctime)s %(message)s', level=logging.DEBUG)
 
@@ -35,7 +37,6 @@ def process_data():
     data_processor.calibrate('voltage_calibration', depth_calibration)
     
     data_processor.launch('01809', 3, meta_data_dir)
-
 
     logging.info(' FINISHED DATA PROCESSING')
     
