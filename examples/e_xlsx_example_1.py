@@ -5,6 +5,10 @@ print('Script requires pydroscape and runs with Python 3.')
 sys.path.insert(0,'D:/Python/')
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..\\..')))
 
+# set up logging
+import logging
+logging.basicConfig(filename='logfile.log', format='%(asctime)s %(message)s', level=logging.DEBUG)
+
 try:
     import pydroscape.e_xlsx as psx
     import pydroscape.f_utilities as psu
@@ -33,11 +37,11 @@ def main():
     
     print('START DATA PROCESSING ...')    
     for i in range(1, no_of_txt_files + 1):
-        print('Processing: ' + own_dir + 'sample_data/text/site_' + str(i) + '.txt')
+        print('Processing: ' + own_dir + 'sample_data/text/geo_out1/site_' + str(i) + '.txt')
         dict_var1, dict_var2, dict_var3, dict_var4, dict_vars = reset_dicts()        
         
         # load data file as nested list with pye.f_utilities
-        file_data = psu.read_file(own_dir + 'sample_data/text/site_' + str(i) + '.txt', ',')
+        file_data = psu.read_file(own_dir + 'sample_data/text/geo_out1/site_' + str(i) + '.txt', ',')
         try:
             # find correct data columns from header names
             col_plant = file_data[0].index('Variable')
@@ -52,7 +56,7 @@ def main():
             print(' * Data count OK')                    
         except:
             print('Error: Could not identify columns in ' + own_dir + 
-                  'sample_data/site_' + str(i) + '.txt')
+                  'sample_data/text/geo_out1/site_' + str(i) + '.txt')
             return -1
 
         print(' * Writing Workbook ...')

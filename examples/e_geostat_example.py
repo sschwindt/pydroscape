@@ -1,6 +1,8 @@
 import os, sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..\\..')))
 import pydroscape.e_geostat as psg
+
+# set up logging
 import logging
 logging.basicConfig(filename='logfile.log', format='%(asctime)s %(message)s', level=logging.DEBUG)
 
