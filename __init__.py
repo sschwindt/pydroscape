@@ -6,6 +6,7 @@ try:
     sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
     sys.path.append(os.path.dirname(__file__))
     sys.path.append(os.path.dirname(__file__) + '/data_processing')
+    sys.path.append(os.path.dirname(__file__) + '/gdal_pool')
     sys.path.append(os.path.dirname(__file__) + '/sediment_transport')
 except:
     pass
@@ -44,7 +45,7 @@ try:
     import qgis.core
     import e_geocalc
 except:
-    print("WARNING: Cannot import qgis. Refer to https://docs.qgis.org/3.4/en/docs/pyqgis_developer_cookbook/intro.html#python-applications for trouble-shooting.")
+    print("WARNING: Cannot import qgis.core. Refer to https://docs.qgis.org/3.4/en/docs/pyqgis_developer_cookbook/intro.html#python-applications for trouble-shooting.")
 
 try:
     import pandas as pd
