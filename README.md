@@ -11,7 +11,7 @@ Installed as local package, the functionalities can be accessed in Python with `
 In addition, `pydroscape` comes with built-in geospatial functions for converting vector (polygon, point or line shapefiles) to rasters (GeoTIFF), and vice versa. These functions are available as:
 
 * `pydroscape.raster2vector(src_raster, target_dir, dst_layername, field_name="gridcode")` and
-* `pydroscape.vector2raster()`
+* `pydroscape.vector2raster(input_shp, output_dir, output_raster_name, reference_raster, gdalformat='GTiff', burn_value=1)`
 
 # Installation
 The current setup of `pydroscape` is quite simple (but not robust though): Download this repository, or (at least a little bit) more robust, clone this repository. Make sur to [install Git Bash](https://git-scm.com/downloads) to leverage the power of GitHub. Then:
